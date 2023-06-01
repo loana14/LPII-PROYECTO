@@ -1,0 +1,20 @@
+@CHARSET "ISO-8859-1";
+body{
+	background-color:#abdbe3;
+}
+#main, #login{
+	background-color:white;
+	text-align:center;
+	padding:20px;
+	padding-bottom:40px;
+	margin:20px;
+	border-radius:10px;
+}
+
+#create, #buttons{
+	background-color:#eeeee4;
+	text-align:center;
+	padding:10px;
+	margin:20px;
+	border-radius:10px;
+}
