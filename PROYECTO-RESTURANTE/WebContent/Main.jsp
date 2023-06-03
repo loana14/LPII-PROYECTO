@@ -16,14 +16,14 @@
 		<a href="FrmListaEmpleado.jsp" class="btn btn-primary" style="width: 70%">Lista de Empleados</a>
 		<br>
 		<br>
-		<a href="FrmListaEmpleado.jsp" class="btn btn-primary" style="width: 70%">Lista de Insumos</a>
+		<a href="FrmListaInsumos.jsp" class="btn btn-primary" style="width: 70%">Lista de Insumos</a>
 		<br>
 		<br>
-		<a href="FrmListaEmpleado.jsp" class="btn btn-primary" style="width: 70%">Lista de Mesas</a>
+		<a href="FrmListaMesas.jsp" class="btn btn-primary" style="width: 70%">Lista de Mesas</a>
 	</form>
 </div>
 <div id="buttons">
-	<a class="btn btn-danger">Cerrar sesion</a>
+	<a href="Index.jsp" class="btn btn-danger">Cerrar sesion</a>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>

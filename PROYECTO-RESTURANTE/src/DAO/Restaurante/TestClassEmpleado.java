@@ -29,7 +29,8 @@ public class TestClassEmpleado {
 		//metodo listar
 		/*List<ClassEmpleado> listado = crudem.ListarEmpleado();
 		for(ClassEmpleado listar:listado){
-			System.out.println("id empleado "+ listar.getId_emp());
+			System.out.println("id empleado "+ listar.getId_emp()+ "Nombre " + listar.getNom_emp() + "Apellido " + listar.getApe_emp()+ "DNI " + listar.getApe_emp()
+			+ "Edad " + listar.getEdad() + "Fecha Nacimiento " + listar.getFechanac_emp() + "Fecha Ingreso " + listar.getFechaing_emp()+ "Rol" + listar.getRol());
 		}*/
 	}
 }

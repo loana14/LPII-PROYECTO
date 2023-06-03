@@ -62,11 +62,13 @@ public class ControladorEmpleado extends HttpServlet {
 		Date fecha2;
 		try {
 			fecha=sdf.parse(fechanac_emp);
-			fecha2=sdf.parse(fechaing_emp);
 			Date fechasql=fecha;
-			Date fechasql2=fecha2;
 			clem.setFechanac_emp(fechasql);
+			
+			fecha2=sdf.parse(fechaing_emp);
+			Date fechasql2=fecha2;
 			clem.setFechaing_emp(fechasql2);
+			
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

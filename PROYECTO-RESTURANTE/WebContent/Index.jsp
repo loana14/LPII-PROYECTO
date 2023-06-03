@@ -24,7 +24,7 @@
 </div>
 <div align="center" id="create">
 	<form id="form2">
-		<p>No tienes usuario? <input type="submit" class="btn btn-secondary" value="Crear usuario"></p>
+		<p>No tienes usuario?<a href="FrmCrearUsuario.jsp" class="btn btn-secondary">Crear Usuario</a></p>
 	</form>
 </div>
 <%
