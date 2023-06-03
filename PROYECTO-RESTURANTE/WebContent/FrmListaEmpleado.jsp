@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>Listado de Empleado</h1>
-<table>
+<table align="center">
 <tr>
 <th>Id<th>
 <th>Nombre<th>
@@ -21,8 +21,17 @@
 <th>Fecha de Ingreso<th>
 <th>Rol<th>
 </tr>
-<c:forEach var="Empleado" items="${ListaEmpleado}">
-<td><c:out value=""></c:out></td>
+<c:forEach var="empleado" items="${ListaEmpleado}">
+<tr>
+<td><c:out value="${empleado.id_emp}"></c:out></td>
+<td><c:out value="${empleado.nom_emp}"></c:out></td>
+<td><c:out value="${empleado.ape_emp}"></c:out></td>
+<td><c:out value="${empleado.dni}"></c:out></td>
+<td><c:out value="${empleado.edad}"></c:out></td>
+<td><fmt:formatDate value ="${empleado.fechanac_emp}" pattern="dd-MM-yyyy"/></td>
+<td><fmt:formatDate value ="${empleado.fechaing_emp}" pattern="dd-MM-yyyy"/></td>
+<td><c:out value="${empleado.rol}"></c:out></td>
+<tr>
 </c:forEach>
 </table>
 </body>

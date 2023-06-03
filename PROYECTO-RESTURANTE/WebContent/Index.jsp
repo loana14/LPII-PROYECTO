@@ -10,14 +10,14 @@
 </head>
 <body>
 <div align="center" id="login">
-	<form id="form1">
+	<form id="form1" action="ControladorUsuario" method="post">
 	<h1>Iniciar Sesion</h1>
 		<p>&nbsp;</p>
 		<img src="img/usuario.png">
-		<input type="text" style="border-radius: 10px;" placeholder="Username">
+		<input type="text" name="nom_usu" placeholder="Username">
 		<br>
 		<img src="img/password.png">
-		<input type="password" style="border-radius: 10px;" placeholder="Password">
+		<input type="password" name="pas_usu" placeholder="Password">
 		<hr>
 		<input type="submit" value="Ingresar" class="btn btn-primary">
 	</form>
@@ -26,6 +26,14 @@
 	<form id="form2">
 		<p>No tienes usuario? <input type="submit" class="btn btn-secondary" value="Crear usuario"></p>
 	</form>
+</div>
+<%
+String msj=(String)request.getAttribute("msj");
+String msjindex="";
+if(msj!=null) msjindex=msj;
+%>
+<div align="center">
+<%=msjindex%>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
